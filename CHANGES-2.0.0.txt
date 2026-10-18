@@ -1,0 +1,15 @@
+DROPROOMS 2.0.0 (droprooms2.py)
+Original game: droprooms.py 1.0.0 (unchanged - still in the repo)
+
+New: full 3D renderer on the maze2 pipeline
+- Analytic raytraced scene: striped center column, ring slabs per floor,
+  red danger tiles, bouncing ball, backrooms haze fog
+- Truecolor half-block frames, delta-frame writes (only changed cells are
+  sent), non-blocking output with frame skip, adaptive detail on slow links
+- [ ] keys adjust FOV, F cycles fps cap (same as maze3)
+- Ball renders at the front of the tower facing the camera
+
+Same as 1.0.0 (mechanics untouched, copied verbatim):
+- Tower generation, gap/danger placement, rotation speed, landing rules,
+  scoring, level-ups, best-score record file
+- Left/Right rotates the tower; drop through the gaps; red tiles end the run
